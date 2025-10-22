@@ -1,0 +1,36 @@
+{
+  "name": "botpe-whatsapp-ai",
+  "version": "1.0.0",
+  "description": "WhatsApp AI Bots solution using BotPe API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "test": "ts-node examples/test-messages.ts",
+    "webhook": "ts-node src/webhook/server.ts",
+    "tunnel": "sh scripts/start-tunnel.sh"
+  },
+  "keywords": [
+    "whatsapp",
+    "botpe",
+    "ai",
+    "chatbot",
+    "messaging"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "sql.js": "^1.10.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.16",
+    "@types/sql.js": "^1.4.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
