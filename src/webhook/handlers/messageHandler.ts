@@ -1,5 +1,7 @@
 import { saveIncomingMessage } from '../../database/operations';
 import { logIncomingMessage, logError } from '../../utils/logger';
+import { handleDoctorAppointmentBot, hasActiveSession } from '../../bot/doctor-appointment-bot';
+import { config2 } from '../../config/env';
 
 /**
  * Handle incoming WhatsApp messages
@@ -19,6 +21,15 @@ export async function handleIncomingMessage(webhookData: any): Promise<void> {
       if (contact?.profile?.name) {
         contactName = contact.profile.name;
       }
+    }
+
+    // Check if this is for Number 2 and trigger bot if needed
+    const isNumber2 = to === config2.businessPhoneNumberId;
+    const triggerText = webhookData.text?.body?.toLowerCase();
+
+    if (isNumber2 && (triggerText === 'dr1' || hasActiveSession(from))) {
+      // Route to doctor appointment bot
+      await handleDoctorAppointmentBot(from, type, webhookData, contactName);
     }
 
     // Parse message content based on type

@@ -1,0 +1,46 @@
+{
+	"hospital_name": "BotPe Care",
+	"departments": [
+		{ "title": "Cardiology", "subtitle": "Heart checkups, ECG, echo, hypertension care" },
+		{ "title": "Orthopedics", "subtitle": "Bone, joint, sports injury, fracture care" },
+		{ "title": "Neurology", "subtitle": "Headache, seizures, stroke, nerve care" },
+		{ "title": "Dermatology", "subtitle": "Skin, hair, acne, allergy treatments" },
+		{ "title": "Pediatrics", "subtitle": "Child wellness, vaccination, growth care" },
+		{ "title": "ENT", "subtitle": "Ear, nose, throat, sinus, hearing care" }
+	],
+	"locations": [
+		{ "title": "Baner, Pune", "subtitle": "5 kms away • 24 hours" },
+		{ "title": "Aundh West, Pune", "subtitle": "4 kms away • 24 hours • Wheelchair access" },
+		{ "title": "Kothrud, Pune", "subtitle": "3 kms away • 24 hours • Parking available" },
+		{ "title": "Katraj, Pune", "subtitle": "6 kms away • 24 hours • Pharmacy on-site" }
+	],
+	"doctors": [
+		{ "title": "Dr A Sharma", "subtitle": "MD Cardiology • 10 yrs exp" },
+		{ "title": "Dr B Mehta", "subtitle": "MS Orthopedics • 12 yrs exp" },
+		{ "title": "Dr C Rao", "subtitle": "DM Neurology • 9 yrs exp" },
+		{ "title": "Dr D Kumar", "subtitle": "MD Dermatology • 8 yrs exp" },
+		{ "title": "Dr E Patel", "subtitle": "DCH Pediatrics • 11 yrs exp" },
+		{ "title": "Dr F Jain", "subtitle": "MS ENT • 7 yrs exp" },
+		{ "title": "Dr G Singh", "subtitle": "MBBS, MD • 6 yrs exp" }
+	],
+	"dates": [
+		{ "title": "23 October", "subtitle": "Friday" },
+		{ "title": "24 October", "subtitle": "Saturday" },
+		{ "title": "25 October", "subtitle": "Sunday" },
+		{ "title": "26 October", "subtitle": "Monday" },
+		{ "title": "27 October", "subtitle": "Tuesday" },
+		{ "title": "28 October", "subtitle": "Wednesday" },
+		{ "title": "29 October", "subtitle": "Thursday" },
+		{ "title": "30 October", "subtitle": "Friday" },
+		{ "title": "31 October", "subtitle": "Saturday" },
+		{ "title": "01 November", "subtitle": "Sunday" }
+	],
+	"time_slots": [
+		{ "title": "9:00 AM", "subtitle": "Morning slot" },
+		{ "title": "10:30 AM", "subtitle": "Morning slot" },
+		{ "title": "12:00 PM", "subtitle": "Afternoon slot" },
+		{ "title": "2:00 PM", "subtitle": "Afternoon slot" },
+		{ "title": "4:30 PM", "subtitle": "Evening slot" },
+		{ "title": "6:00 PM", "subtitle": "Evening slot" }
+	]
+}
